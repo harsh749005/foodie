@@ -17,7 +17,7 @@ const Login = () => {
       <input type="checkbox" name="terms" value="terms"/>
         <p>By clicking you are accepting our Tearms and Conditions</p>
       </div>
-      <p>Create New account ? <a href="" className='text-red-600 font-medium'>Click here</a></p>
+      <p>Create New account ? <Link to="/foodie/register" className='text-red-600 font-medium'>Click here</Link></p>
     </div>
   )
 }

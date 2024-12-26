@@ -38,12 +38,12 @@ const Navbar = ({toggleMenu}) => {
               </a>
             </li>
             <li>
-              <a
-                href=""
+              <Link
+                to="/foodie"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
                 Conatct
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { assets} from '../assets/frontend_assets/assets'
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -38,9 +39,9 @@ const Register = () => {
       </div>
       <p>
         Already have an account ?
-        <a href="" className="ml-2 text-red-600 font-medium">
+        <Link to="/foodie/login" className="ml-2 text-red-600 font-medium">
           Login
-        </a>
+        </Link>
       </p>
     </div>
   );
