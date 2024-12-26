@@ -3,10 +3,10 @@ import { assets } from "../assets/frontend_assets/assets";
 import { food_list } from "../assets/frontend_assets/assets";
 const Card = () => {
   return (
-    <div className="w-[70%] m-auto flex flex-wrap  gap-5 cursor-pointer">
+    <div className="w-[90%] md:w-[70%] m-auto flex flex-wrap  gap-5 cursor-pointer">
       {
         food_list.map((item,index)=>(
-      <div className="w-60 h-[450px] bg-white rounded-lg shadow-md">
+      <div className="w-full md:w-60 h-[450px] bg-white rounded-lg shadow-md">
         <div className="w h-56 ">
           <img
             src={item.image}
