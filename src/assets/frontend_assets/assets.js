@@ -3,6 +3,8 @@ import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import hamburger_icon from './menu.png'
+import plus from './plus.png'
+
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -81,7 +83,8 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    hamburger_icon
+    hamburger_icon,
+    plus
 }
 
 export const menu_list = [
