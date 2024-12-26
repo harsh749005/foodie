@@ -47,7 +47,7 @@ const Navbar = ({toggleMenu}) => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-between items-center gap-10">
+        <div className="flex justify-between items-center gap-2 md:gap-10">
           <img src={assets.search_icon} alt="" className="hidden lg:block w-5 h-5 cursor-pointer"/>
           <Link to="/foodie/cart"><img src={assets.basket_icon} alt="" className="w-5 h-5 md:block"/></Link>
           <Link to="/foodie/register">
