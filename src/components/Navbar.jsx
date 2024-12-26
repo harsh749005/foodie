@@ -49,7 +49,7 @@ const Navbar = ({toggleMenu}) => {
         </div>
         <div className="flex justify-between items-center gap-10">
           <img src={assets.search_icon} alt="" className="hidden lg:block"/>
-          <img src={assets.basket_icon} alt="" className="w-6 lg:w-8 hidden lg:block"/>
+          <img src={assets.basket_icon} alt="" className="w-5 md:w-6 lg:w-8 md:block"/>
           <button className="hidden md:block md:w-24 lg:w-28 border-2 border-slate-400 text-slate-500 rounded-full p-2 lg:text-lg hover:text-slate-700 hover:border-slate-700">
             Sign In
           </button>
