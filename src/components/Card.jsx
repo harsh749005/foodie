@@ -20,11 +20,11 @@ const Card = () => {
             <img src={assets.rating_starts} alt="" />
           </div>
           <p className="text-gray-600">{item.description}</p>
-          <div className="mt-2 flex justify-between items-center">
+          <div className="mt-5 flex justify-between items-center">
             <h2 className="text-red-600 font-medium text-2xl ">
               ${item.price}
             </h2>
-            <div className="rounded-full w-8 h-8 border-2 border-salte-500 p-2 ">
+            <div className="rounded-full w-10 h-10 border-2 border-salte-500 p-2 ">
               <img
                 src={assets.plus}
                 alt=""
