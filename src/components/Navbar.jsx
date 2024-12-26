@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import HamburgerMenu from "./HamburgerMenu";
+import { Link } from "react-router-dom";
 
 const Navbar = ({toggleMenu}) => {
 
@@ -48,10 +49,12 @@ const Navbar = ({toggleMenu}) => {
         </div>
         <div className="flex justify-between items-center gap-10">
           <img src={assets.search_icon} alt="" className="hidden lg:block w-5 h-5 cursor-pointer"/>
-          <a href="/cart"><img src={assets.basket_icon} alt="" className="w-5 h-5 md:block"/></a>
+          <Link to="/foodie/cart"><img src={assets.basket_icon} alt="" className="w-5 h-5 md:block"/></Link>
+          <Link to="/foodie/register">
           <button className="hidden md:block md:w-24 lg:w-28 border-2 border-slate-400 text-slate-500 rounded-full p-2 lg:text-lg hover:text-slate-700 hover:border-slate-700">
             Sign In
           </button>
+          </Link>
           
           <img onClick={toggleMenu} src={assets.hamburger_icon} alt="menu" className="w-8 md:w-9 lg:hidden " />
           
