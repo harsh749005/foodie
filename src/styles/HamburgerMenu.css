@@ -1,0 +1,4 @@
+.hamburgerMenuLi:hover .hamburgerMenua{
+    color: white;
+    cursor: pointer;
+}
