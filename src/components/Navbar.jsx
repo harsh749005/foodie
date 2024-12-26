@@ -7,7 +7,7 @@ const Navbar = ({toggleMenu}) => {
  
   return (
     
-      <div className=" p-5 flex justify-between items-center w-[90%] xl:w-[70%] m-auto">
+      <div className=" pt-5 pb-5 flex justify-between items-center w-[90%] xl:w-[70%] m-auto">
         <div className="w-24 md:w-36 lg:w-44">
           <img className="w-full" src={assets.logo} alt="" />
         </div>
