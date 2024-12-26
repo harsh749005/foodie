@@ -6,7 +6,7 @@ const Menu = () => {
     <div className="w-[90%] lg:w-[70%] m-auto flex flex-col gap-5 mt-5">
       <div >
         <h2 className='w-max text-2xl font-medium'>Explore Menu</h2>
-        <p className='w-[90%] lg:w-[70%] mt-5 text-md'>
+        <p className='w-[90%] lg:w-[70%] mt-5 text-md text-slate-500'>
             Choose form a diverse featuring a delectable array of dishes. Our mission is to satisfy your 
             cravingd and elevate dining experience, one delicious meat at a time.
         </p>
