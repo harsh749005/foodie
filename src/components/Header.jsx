@@ -13,7 +13,7 @@ const Header = () => {
           />
           <h2
             // style={{ lineHeight: "72px" }}
-            className="text-xl bottom-5 left-10  absolute  w-max text-white font-medium md:text-6xl md:bottom-24 lg:bottom-48 md:left-20"
+            className="text-2xl bottom-5 left-10 absolute w-max text-white font-medium md:text-6xl md:bottom-24 lg:bottom-48 md:left-20"
           >
             Order Your <br /> Favourite Food
           </h2>
