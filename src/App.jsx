@@ -15,7 +15,7 @@ function App() {
 
   
   return (
-    <div className=' w-[27rem] md:w-full'>
+    <div className=' w-[20rem] md:w-full'>
       <Navbar toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
