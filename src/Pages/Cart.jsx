@@ -21,7 +21,7 @@ const Cart = () => {
 
           <tr className='text-center text-sm lg:text-lg'>
           <td className=' h-20 lg:h-36'>
-            <div className='w-12 h-12 lg:w-24 lg:h-24 rounded m-auto'>
+            <div className='w-12 h-12 md:w-24 md:h-24 rounded m-auto'>
             <img src={food_list[0].image} alt="" className='w-full h-full object-cover rounded' />
             </div></td>
             <td >Burger</td>
@@ -45,8 +45,8 @@ const Cart = () => {
       </table>
 
       </div>
-        <div className='mobFoodItem rep'>
-        <div className='flex gap-5 justify-between  md:hidden mb-2'>
+        <div className='mobFoodItem rep md:hidden'>
+        <div className='flex gap-5 justify-between   mb-2'>
         <div className='flex gap-5 justify-start'>
         <div className='w-20 h-20 md:hidden rounded '>
             <img src={food_list[0].image} alt="" className='w-full h-full object-cover rounded' />
@@ -73,7 +73,7 @@ const Cart = () => {
                 </div>
             </div>
       </div>
-      <hr />
+      <hr className='md:hidden'/>
         </div>
       
       
