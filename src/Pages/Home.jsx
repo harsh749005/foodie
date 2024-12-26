@@ -12,8 +12,8 @@ const Home = () => {
     <>
     <Header/>
     <Menu/>
-    {/* <h1 className="w-[70%] m-auto mt-4 mb-4 text-2xl font-medium">Top dishes near you</h1> */}
-    {/* <Card/> */}
+    <h1 className="w-[90%] md:w-[70%]  m-auto mt-4 mb-4 text-2xl font-medium">Top dishes near you</h1>
+    <Card/>
     {/* <Footer/> */}
     </>
 
