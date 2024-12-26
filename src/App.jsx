@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Header from './components/Header'
 import Menu from './components/Menu'
 import HamburgerMenu from './components/HamburgerMenu'
+import Cart from './Pages/Cart'
 
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
@@ -19,10 +20,9 @@ function App() {
       <Navbar toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
-      <Home/>
+      {/* <Home/> */}
       
-      {/* <Login/> */}
-      {/* <Register/> */}
+      <Cart/>
     </div>
   )
 }
