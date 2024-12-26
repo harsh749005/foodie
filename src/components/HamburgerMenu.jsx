@@ -3,7 +3,7 @@ import '../styles/HamburgerMenu.css'
 import { assets } from '../assets/frontend_assets/assets'
 const HamburgerMenu = ({closeMenu}) => {
   return (
-    <div className=' absolute sm:left-6 left-[50%] top-[100%] translate-x-[-50%] translate-y-[-50%] bg-white z-10 w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2  '>
+    <div className=' absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] bg-white z-10 w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2  '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
         <img onClick={closeMenu} src={assets.cross_icon} alt="" className='cursor-pointer'/>
     </div>
