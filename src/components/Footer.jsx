@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='w-24 md:w-36 lg:w-44'>
         <img className='w-full' src={assets.logo} alt="" />
         </div>
-        <p className='text-white w-full md:w-[650px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tenetur maxime sapiente ad libero, dolorem vel necessitatibus doloremque at amet. Soluta provident beatae aperiam deserunt vero quibusdam aspernatur magni ea.
+        <p className='text-slate-500 w-full md:w-[650px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tenetur maxime sapiente ad libero, dolorem vel necessitatibus doloremque at amet. Soluta provident beatae aperiam deserunt vero quibusdam aspernatur magni ea.
 </p>
         <div className='flex items-center gap-5'>
             <a className='cursor-pointer w-9 md:w-11' href=''><img src={assets.facebook_icon} alt="" /></a>
@@ -19,17 +19,17 @@ const Footer = () => {
       <div className='flex flex-col gap-5'>
         <h1 className=' text-white font-bold text-2xl '>COMPANY</h1>
         <ul className='flex flex-col gap-2'>
-          <li className=' list-none'><a className=' cursor-pointer text-white'>Home</a></li>
-          <li className=' list-none'><a className=' cursor-pointer text-white'>About us</a></li>
-          <li className=' list-none'><a className=' cursor-pointer text-white'>Delivery</a></li>
-          <li className=' list-none'><a className=' cursor-pointer text-white'>Privacy policy</a></li>
+          <li className=' list-none'><a className=' cursor-pointer text-slate-500 hover:text-white'>Home</a></li>
+          <li className=' list-none'><a className=' cursor-pointer text-slate-500 hover:text-white'>About us</a></li>
+          <li className=' list-none'><a className=' cursor-pointer text-slate-500 hover:text-white'>Delivery</a></li>
+          <li className=' list-none'><a className=' cursor-pointer text-slate-500 hover:text-white'>Privacy policy</a></li>
         </ul>
       </div>
       <div className='flex flex-col gap-5'>
         <h1 className='text-white font-bold text-2xl'>GET IN TOUCH</h1>
         <div className='flex flex-col gap-2'>
-            <p className='text-white cursor-pointer'>+123 456 7890</p>
-            <p className='text-white cursor-pointer'>Email: info@example.com</p>
+            <p className='text-slate-500 hover:text-white cursor-pointer'>+123 456 7890</p>
+            <p className='text-slate-500 hover:text-white cursor-pointer'>Email: info@example.com</p>
         </div>
       </div>
     </div>
