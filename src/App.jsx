@@ -20,9 +20,9 @@ function App() {
       <Navbar toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
-      {/* <Home/> */}
+      <Home/>
       
-      <Cart/>
+      {/* <Cart/> */}
     </div>
   )
 }
