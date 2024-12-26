@@ -26,7 +26,7 @@ const Card = () => {
             </h2>
             <div className="rounded-full w-11 h-11 shadow-sm">
               <img
-                src={assets.add_icon_white}
+                src={assets.plus}
                 alt=""
                 className="w-full h-full rounded-full cursor-pointer hover:shadow-md"
               />
