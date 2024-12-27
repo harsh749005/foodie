@@ -1,7 +1,9 @@
 import React from 'react'
 import '../styles/HamburgerMenu.css'
 import { assets } from '../assets/frontend_assets/assets'
+import { Link } from 'react-router-dom'
 const HamburgerMenu = ({closeMenu}) => {
+  
   return (
     <div className=' absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] bg-white z-10 w-72  p-5 md:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2  '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
@@ -9,42 +11,44 @@ const HamburgerMenu = ({closeMenu}) => {
     </div>
       <ul className="w-full flex flex-col gap-5 justify-between items-center lg:text-xl font-medium ">
             <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-orange-500  cursor-pointer'>
-              <a
+              <Link
               
-                href=""
+                to="/foodie/"
                 className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li  className='w-full hamburgerMenuLi rounded   p-2 text-center hover:bg-orange-500  cursor-pointer'>
-              <a
-                href=""
+              <Link
+                to="/foodie/about"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li  className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-orange-500  cursor-pointer'>
-              <a
-                href=""
+              <Link
+                to="/foodie/menu"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
                 Menu
-              </a>
+              </Link>
             </li>
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-orange-500  cursor-pointer'>
-              <a
-                href=""
+              <Link
+                to="/foodie/contact"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
                 Conatct
-              </a>
+              </Link>
             </li>
           </ul>
+          <Link to="/foodie/register">
           <button className="rounded md:hidden bg-orange-500 p-2 w-full  text-white font-medium text-lg mb-10">
             Sign In
           </button>
+          </Link>
     </div>
   )
 }
