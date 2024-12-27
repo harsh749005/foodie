@@ -8,11 +8,11 @@ const Register = () => {
       <div className="flex justify-between items-center ">
         <h2 className="text-2xl font-medium">Create account</h2>
         
-        <img
+        {/* <img
           src={assets.cross_icon}
           alt=""
           className="w-4 h-4 cursor-pointer md:hidden"
-        />
+        /> */}
       </div>
       <div className="flex flex-col gap-4">
         <input
