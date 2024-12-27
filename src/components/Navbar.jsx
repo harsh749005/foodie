@@ -14,32 +14,32 @@ const Navbar = ({toggleMenu}) => {
         <div className="hidden lg:block">
           <ul className="  flex gap-5 justify-between items-center lg:text-xl font-medium ">
             <li>
-              <a
-                href=""
+              <Link
+                to="/foodie"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
                 Home
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className=" cursor-pointer text-slate-500 hover:text-slate-700"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className=" cursor-pointer text-slate-500 hover:text-slate-700"
-              >
-                Menu
-              </a>
+              </Link>
             </li>
             <li>
               <Link
-                to="/foodie"
+                to="/foodie/about"
+                className=" cursor-pointer text-slate-500 hover:text-slate-700"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/foodie/menu"
+                className=" cursor-pointer text-slate-500 hover:text-slate-700"
+              >
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/foodie/contact"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
                 Conatct
