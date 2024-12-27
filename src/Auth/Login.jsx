@@ -1,12 +1,12 @@
 import React from 'react'
 import { assets} from '../assets/frontend_assets/assets'
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className='flex flex-col gap-10 bg-white w-96 p-8 m-[auto] rounded-lg'>
       <div className='flex justify-between items-center'>
         <h2 className='text-2xl font-medium'>Login</h2>
-        <img src={assets.cross_icon} alt="" className='w-4 h-4 cursor-pointer'/>
+        <img src={assets.cross_icon} alt="" className='w-4 h-4 cursor-pointer md:hidden'/>
       </div>
       <div className='flex flex-col gap-4'>
         <input type="email" className='text-[18px] p-2 border-2 rounded border-slate-200 bg-transparent outline-red-500 pl-5 placeholder:pl-5' placeholder='Your Name'/>

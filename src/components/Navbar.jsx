@@ -45,6 +45,7 @@ const Navbar = ({toggleMenu}) => {
                 Conatct
               </Link>
             </li>
+            
           </ul>
         </div>
         <div className="flex justify-between items-center gap-2 md:gap-10">
