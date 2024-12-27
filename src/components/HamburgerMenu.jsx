@@ -44,7 +44,7 @@ const HamburgerMenu = ({closeMenu}) => {
               </Link>
             </li>
           </ul>
-          <Link to="/foodie/register" target='_blank' className='rounded md:hidden bg-orange-500 p-2 w-full  text-white font-medium text-lg mb-10'>
+          <Link to="/foodie/register"  className='rounded md:hidden bg-orange-500 p-2 w-full  text-white font-medium text-lg mb-10'>
           <button className="rounded md:hidden bg-orange-500 w-full  text-white font-medium text-lg ">
             Sign In
           </button>
