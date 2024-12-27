@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/HamburgerMenu.css'
 import { assets } from '../assets/frontend_assets/assets'
 import { Link } from 'react-router-dom'
 const HamburgerMenu = ({closeMenu}) => {
+  
   
   return (
     <div className=' absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] bg-white z-10 w-72  p-5 md:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2  '>
@@ -19,7 +20,7 @@ const HamburgerMenu = ({closeMenu}) => {
                 Home
               </Link>
             </li>
-            <li  className='w-full hamburgerMenuLi rounded   p-2 text-center hover:bg-orange-500  cursor-pointer'>
+            <li  className='w-full hamburgerMenuLi rounded p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
                 to="/foodie/about"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
@@ -45,7 +46,7 @@ const HamburgerMenu = ({closeMenu}) => {
             </li>
           </ul>
           <Link to="/foodie/register"  className='rounded md:hidden bg-orange-500 p-2 w-full  text-white font-medium text-lg mb-10'>
-          <button className="rounded md:hidden bg-orange-500 w-full  text-white font-medium text-lg ">
+          <button onClick={closeMenu} className="rounded md:hidden bg-orange-500 w-full  text-white font-medium text-lg ">
             Sign In
           </button>
           </Link>
