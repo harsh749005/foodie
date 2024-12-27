@@ -26,10 +26,10 @@ function App() {
       <Navbar toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
-
+      {/* <Menu/> */}
       
       <Routes>
-        <Route  path="/foodie/home" element={<Home />} />
+        <Route  path="/foodie/" element={<Home />} />
         <Route  path="/foodie/login" element={<Login />} />
         <Route  path="/foodie/register" element={<Register />} />
         <Route  path="/foodie/cart" element={<Cart />} />

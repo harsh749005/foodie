@@ -15,7 +15,7 @@ const Navbar = ({toggleMenu}) => {
           <ul className="  flex gap-5 justify-between items-center lg:text-xl font-medium ">
             <li>
               <Link
-                to="/foodie/home"
+                to="/foodie/"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
                 Home
