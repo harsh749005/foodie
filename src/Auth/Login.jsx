@@ -3,7 +3,7 @@ import { assets} from '../assets/frontend_assets/assets'
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <div className='flex flex-col gap-10 bg-white w-96 p-8 m-[auto] rounded-lg'>
+    <div className='flex flex-col gap-10 bg-white w-96 p-8 m-[auto] rounded-lg md:border-2 md:border-slate-400 md:mt-10'>
       <div className='flex justify-between items-center'>
         <h2 className='text-2xl font-medium'>Login</h2>
         <img src={assets.cross_icon} alt="" className='w-4 h-4 cursor-pointer md:hidden'/>
