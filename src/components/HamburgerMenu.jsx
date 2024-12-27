@@ -13,7 +13,7 @@ const HamburgerMenu = ({closeMenu}) => {
       <ul className="w-full flex flex-col gap-5 justify-between items-center lg:text-xl font-medium ">
             <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
-              
+                onClick={closeMenu}              
                 to="/foodie/"
                 className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
@@ -22,6 +22,7 @@ const HamburgerMenu = ({closeMenu}) => {
             </li>
             <li  className='w-full hamburgerMenuLi rounded p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
+                onClick={closeMenu}                
                 to="/foodie/about"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
@@ -30,6 +31,7 @@ const HamburgerMenu = ({closeMenu}) => {
             </li>
             <li  className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
+                onClick={closeMenu}
                 to="/foodie/menu"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
@@ -38,6 +40,7 @@ const HamburgerMenu = ({closeMenu}) => {
             </li>
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
+                onClick={closeMenu}
                 to="/foodie/contact"
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
