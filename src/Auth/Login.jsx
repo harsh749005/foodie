@@ -14,7 +14,7 @@ const Login = () => {
         <button className='bg-red-500 h-12 rounded text-white text-[20px] font-medium cursor-pointer' >Login</button>
       </div>
       <div className='flex items-baseline gap-2 '>
-      <input type="checkbox" name="terms" value="terms"/>
+      <input type="checkbox" name="terms" value="terms" className="cursor-pointer"/>
         <p>By clicking you are accepting our Tearms and Conditions</p>
       </div>
       <p>Create New account ? <Link to="/foodie/register" className='text-red-600 font-medium'>Click here</Link></p>

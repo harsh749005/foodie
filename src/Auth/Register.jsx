@@ -35,7 +35,7 @@ const Register = () => {
         </button>
       </div>
       <div className="flex items-baseline gap-2 ">
-        <input type="checkbox" name="terms" value="terms" />
+        <input type="checkbox" name="terms" value="terms" className="cursor-pointer" />
         <p>By clicking you are accepting our Tearms and Conditions</p>
       </div>
       <p>
