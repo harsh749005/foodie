@@ -14,19 +14,13 @@ function App() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  const [getMenuItemName,SetMenuItemName] = useState("");
-  const handleMenuItem = (e) =>{
-    
-    SetMenuItemName(e.target.alt);
-  }
 
-  
   return (
     <div className=' w-[100%] md:w-full'>
       <Navbar toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
-      {/* <Menu/> */}
+  
       
       <Routes>
         <Route  path="/foodie/" element={<Home />} />
