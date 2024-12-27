@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div className="flex flex-col gap-10 bg-white w-96 p-8 m-[auto] rounded-lg md:border-2 md:border-slate-400 md:mt-10">
+    <div className="flex flex-col gap-10 bg-white w-[90%] xl:w-[70%] p-8 m-[auto] rounded-lg md:border-2 md:border-slate-400 md:mt-10">
       <div className="flex justify-between items-center ">
         <h2 className="text-2xl font-medium">Create account</h2>
         
