@@ -9,6 +9,7 @@ import HamburgerMenu from './components/HamburgerMenu'
 import Cart from './Pages/Cart'
 import { Routes,Route } from 'react-router-dom'
 import DeliveryInfo from './Pages/DeliveryInfo'
+import Orders from './Pages/Orders'
 
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
         <Route  path="/foodie/register" element={<Register />} />
         <Route  path="/foodie/Cart" element={<Cart />} />
         <Route  path='/foodie/DeliveryInfo' element={<DeliveryInfo />} />
+        <Route  path='/foodie/Orders' element={<Orders />} />
       </Routes>
     </div>
   )

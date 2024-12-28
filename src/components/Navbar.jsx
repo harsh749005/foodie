@@ -31,18 +31,18 @@ const Navbar = ({toggleMenu}) => {
             </li>
             <li>
               <Link
-                to="/foodie/menu"
+                to="/foodie/contact"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
-                Menu
+                Contact
               </Link>
             </li>
             <li>
               <Link
-                to="/foodie/contact"
+                to="/foodie/Orders"
                 className=" cursor-pointer text-slate-500 hover:text-slate-700"
               >
-                Conatct
+                Orders
               </Link>
             </li>
             

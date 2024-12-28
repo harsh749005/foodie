@@ -29,15 +29,6 @@ const HamburgerMenu = ({closeMenu}) => {
                 About
               </Link>
             </li>
-            <li  className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-orange-500  cursor-pointer'>
-              <Link
-                onClick={closeMenu}
-                to="/foodie/menu"
-                 className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
-              >
-                Menu
-              </Link>
-            </li>
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-orange-500  cursor-pointer'>
               <Link
                 onClick={closeMenu}
@@ -45,6 +36,15 @@ const HamburgerMenu = ({closeMenu}) => {
                  className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
               >
                 Conatct
+              </Link>
+            </li>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-orange-500  cursor-pointer'>
+              <Link
+                onClick={closeMenu}
+                to="/foodie/Orders"
+                 className="hamburgerMenua cursor-pointer text-slate-500 hover:text-white"
+              >
+                Orders
               </Link>
             </li>
           </ul>
