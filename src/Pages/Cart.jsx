@@ -1,6 +1,7 @@
 import React from 'react'
 import { food_list } from '../assets/frontend_assets/assets'
 import { assets } from '../assets/frontend_assets/assets'
+import { Link } from 'react-router-dom'
 const Cart = () => {
   return (
     <div className=' flex flex-col gap-2 md:gap-5 lg:gap-12 w-[90%] lg:w-[70%] m-auto border-slate-400 border-2 p-5 rounded-lg'>
@@ -96,7 +97,9 @@ const Cart = () => {
                 <p className='text-black font-bold  '>$9</p>
             </div>
         </div>
+        <Link to='/foodie/deliveryInfo'>
         <button className='w-full text-sm p-2 lg:p-0 lg:h-12 rounded text-white lg:text-xl font-medium cursor-pointer bg-red-500'>Checkout</button>
+        </Link>
       </div>
     </div>
   )
