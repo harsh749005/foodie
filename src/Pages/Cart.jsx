@@ -97,7 +97,7 @@ const Cart = () => {
                 <p className='text-black font-bold  '>$9</p>
             </div>
         </div>
-        <Link to='/foodie/deliveryInfo'>
+        <Link to='/foodie/DeliveryInfo'>
         <button className='w-full text-sm p-2 lg:p-0 lg:h-12 rounded text-white lg:text-xl font-medium cursor-pointer bg-orange-500'>Checkout</button>
         </Link>
       </div>
