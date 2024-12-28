@@ -98,7 +98,7 @@ const Cart = () => {
             </div>
         </div>
         <Link to='/foodie/deliveryInfo'>
-        <button className='w-full text-sm p-2 lg:p-0 lg:h-12 rounded text-white lg:text-xl font-medium cursor-pointer bg-red-500'>Checkout</button>
+        <button className='w-full text-sm p-2 lg:p-0 lg:h-12 rounded text-white lg:text-xl font-medium cursor-pointer bg-orange-500'>Checkout</button>
         </Link>
       </div>
     </div>
