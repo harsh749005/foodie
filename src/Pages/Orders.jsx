@@ -10,7 +10,7 @@ const Orders = () => {
         <div className='w-12 h-12'>
             <img className='w-full h-full object-cover'src={assets.parcel_icon} alt="parcel icon" />
         </div>
-        <p className='w-44 h-6 line-clamp-1'> Garlic sanwich </p>
+        <p className='w-44 h-6 line-clamp-1'> Garlic sandwich </p>
         <p>$65.00</p>
         <p>3</p>
         <div className='flex items-center gap-2'>
