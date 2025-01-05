@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Register = () => {
+const Register = ({setisAuth}) => {
 
   const [name,setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,7 +24,8 @@ const Register = () => {
         setName('');
         setEmail('');
         setPassword('');
-        console.log(response.data.message);
+        setisAuth(true);
+        console.log(response.data);
         navigate('/foodie/');
       }
       else{

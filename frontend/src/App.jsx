@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route  path="/foodie/" element={<Home />} />
         <Route  path="/foodie/login" element={<Login setisAuth={setisAuth}/>} />
-        <Route  path="/foodie/register" element={<Register />} />
+        <Route  path="/foodie/register" element={<Register setisAuth={setisAuth}/>} />
         <Route  path="/foodie/logout" element={<Logout />} />
         <Route  path="/foodie/Cart" element={<Cart />} />
         <Route  path='/foodie/DeliveryInfo' element={<DeliveryInfo />} />
