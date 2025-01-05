@@ -14,7 +14,7 @@ app.use( cors({
     methods: ["GET", "POST","DELETE"],
   }));
 app.use(cookieParser());
-
+app.use('/uploads', express.static('uploads'));
 // database connection
 
 const db = mysql.createConnection({
@@ -108,6 +108,15 @@ app.post('/login', (req, res) => {
 app.get('/logout', (req, res) => {
     res.clearCookie('token');
     res.json({message: 'Logged out'});
+})
+
+// get food items
+app.get('/getfooditems', (req, res) => {
+    const sql = 'SELECT * FROM fooditem';
+    db.query(sql, (err, result) => {
+        if (err) throw err;
+        res.json(result);
+    });
 })
 
 app.get('/', (req, res) => {
