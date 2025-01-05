@@ -3,6 +3,7 @@ const app = express();
 const port = 8081;
 const cors = require('cors');
 const mysql = require('mysql');
+const jwt = require('jsonwebtoken');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
@@ -23,6 +24,34 @@ const db = mysql.createConnection({
 db.connect((err, db) => {
     if(err) throw err;
     console.log('Connected to database');
+})
+
+//register
+app.post('/register', (req, res) => {
+    const {name, email, password} = req.body;
+    const sql = 'SELECT * FROM userDetails WHERE email = ? AND password = ?';
+    db.query(sql,[email,password],(err, result) => {
+        if (err) throw err;
+        if(result.length > 0){
+            res.json({message:'User already exists'});
+        }else{
+            const sql = 'INSERT INTO userDetails (name, email, password) VALUES(?,?,?)';
+            db.query(sql,[name,email,password],(err, result) => {
+                const token = jwt.sign({email},"1234",{expiresIn:"1d"});
+                res.cookie('token', token,{
+                httpOnly: true,
+                secure: process.env.NODE_ENV === "production", // Ensure it's true in production with HTTPS
+                maxAge: 24 * 60 * 60 * 1000,
+                path: "/", // Ensure the cookie is available for all paths
+                domain: "localhost",
+            });      
+                if (err) {
+                    return res.json({error:'Error inserting in database'});
+                };
+                res.json({message: 'Registration successful',token: token});
+            });
+        }
+    })
 })
 
 // login 
