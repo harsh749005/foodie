@@ -12,6 +12,7 @@ import DeliveryInfo from './Pages/DeliveryInfo'
 import Orders from './Pages/Orders'
 
 import { ToastContainer, toast } from 'react-toastify';
+import Logout from './Auth/Logout'
 
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Route  path="/foodie/" element={<Home />} />
         <Route  path="/foodie/login" element={<Login />} />
         <Route  path="/foodie/register" element={<Register />} />
+        <Route  path="/foodie/logout" element={<Logout />} />
         <Route  path="/foodie/Cart" element={<Cart />} />
         <Route  path='/foodie/DeliveryInfo' element={<DeliveryInfo />} />
         <Route  path='/foodie/Orders' element={<Orders />} />

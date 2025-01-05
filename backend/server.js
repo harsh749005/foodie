@@ -104,6 +104,12 @@ app.post('/login', (req, res) => {
     });
 })
 
+// Logout
+app.get('/logout', (req, res) => {
+    res.clearCookie('token');
+    res.json({message: 'Logged out'});
+})
+
 app.get('/', (req, res) => {
     res.send("Hello from Server");
 })

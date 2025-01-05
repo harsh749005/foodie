@@ -15,7 +15,7 @@ const Navbar = ({toggleMenu}) => {
           setisAuth(false);
         } else {
           setisAuth(true); 
-          console.log("Navbar "+response.data);
+          console.log({page:"navbar",serverResponse:response.data});
         }
     }).catch((error)=>{
       console.log(error);
