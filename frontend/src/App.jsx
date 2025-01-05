@@ -11,6 +11,8 @@ import { Routes,Route } from 'react-router-dom'
 import DeliveryInfo from './Pages/DeliveryInfo'
 import Orders from './Pages/Orders'
 
+import { ToastContainer, toast } from 'react-toastify';
+
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -32,6 +34,7 @@ function App() {
         <Route  path='/foodie/DeliveryInfo' element={<DeliveryInfo />} />
         <Route  path='/foodie/Orders' element={<Orders />} />
       </Routes>
+      <ToastContainer />
     </div>
   )
 }
