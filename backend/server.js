@@ -72,7 +72,7 @@ app.post('/register', (req, res) => {
                 if (err) {
                     return res.json({error:'Error inserting in database'});
                 };
-                res.json({message: 'Registration successful',token: token});
+                res.json({page:"Register",message: 'Registration successful'});
             });
         }
     })
