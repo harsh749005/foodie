@@ -4,6 +4,7 @@ const port = 8081;
 const cors = require('cors');
 const mysql = require('mysql');
 const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
@@ -12,6 +13,8 @@ app.use( cors({
     credentials: true,
     methods: ["GET", "POST","DELETE"],
   }));
+app.use(cookieParser());
+
 // database connection
 
 const db = mysql.createConnection({
@@ -25,6 +28,27 @@ db.connect((err, db) => {
     if(err) throw err;
     console.log('Connected to database');
 })
+
+const verifyUser = (req, res, next) => {
+    const token = req.cookies.token;
+    console.log("Token : "+token);
+    if (!token) {
+      return res.status(401).json({ message: "Token is not provided" });
+    } else {
+      jwt.verify(token, "1234", (err, decoded) => {
+        if (err) {
+          return res.json({ Error: "Token is not same" });
+        } else {
+          req.email = decoded.email;
+          next();
+        }
+      });
+    }
+  };
+  // protected route
+  app.get('/', verifyUser, (req, res) => {
+    res.json({email:req.email,greetings:"Hello"});
+  });
 
 //register
 app.post('/register', (req, res) => {
