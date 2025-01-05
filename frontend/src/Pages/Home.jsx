@@ -9,7 +9,7 @@ const Home = () => {
   const handleMenuItem = (e) =>{
     SetMenuItemName(e.target.alt);
   }
-
+ 
   return (
     <>
     <Header/>

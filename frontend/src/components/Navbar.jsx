@@ -4,9 +4,9 @@ import HamburgerMenu from "./HamburgerMenu";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const Navbar = ({toggleMenu}) => {
+const Navbar = ({toggleMenu ,isAuth ,setisAuth}) => {
 
-  const [isAuth,setisAuth] = useState(false);
+  
   axios.defaults.withCredentials = true;
   useEffect(()=>{
     axios.get('http://localhost:8081/')

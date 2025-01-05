@@ -16,20 +16,21 @@ import Logout from './Auth/Logout'
 
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
+  const [isAuth,setisAuth] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className=' w-[100%] md:w-full'>
-      <Navbar toggleMenu={toggleMenu}/>
+      <Navbar toggleMenu={toggleMenu} isAuth={isAuth} setisAuth={setisAuth}/>
       {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       
   
       
       <Routes>
         <Route  path="/foodie/" element={<Home />} />
-        <Route  path="/foodie/login" element={<Login />} />
+        <Route  path="/foodie/login" element={<Login setisAuth={setisAuth}/>} />
         <Route  path="/foodie/register" element={<Register />} />
         <Route  path="/foodie/logout" element={<Logout />} />
         <Route  path="/foodie/Cart" element={<Cart />} />

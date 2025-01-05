@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
-const Login = () => {
+const Login = ({setisAuth}) => {
   
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
@@ -21,6 +21,7 @@ const Login = () => {
           toast.success("Logged in successfully");
           setEmail('');
           setPassword('');
+          setisAuth(true);
           navigate('/foodie/');
         }
       }).catch((err) => {
@@ -35,7 +36,7 @@ const Login = () => {
         <h2 className="text-2xl font-medium">Login</h2>
         {/* <img src={assets.cross_icon} alt="" className='w-4 h-4 cursor-pointer md:hidden'/> */}
       </div>
-      <form onSubmit={handleForm}>
+      <form onSubmit={handleForm} className="flex flex-col gap-4">
       <div className="flex flex-col gap-4">
         <input
           value={email}
