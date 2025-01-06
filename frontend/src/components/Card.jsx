@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { food_list } from "../assets/frontend_assets/assets";
 import axios from 'axios';
-const Card = ({getMenuItem}) => {
+const Card = ({getMenuItem,updateItemQuantity}) => {
   //console.log(getMenuItem); //item which contains the category
   const [fooditem,setFoodItem] = useState([]);
   // const filteredMenu = food_list.filter(item => getMenuItem.includes(item.category));
@@ -44,8 +44,12 @@ const Card = ({getMenuItem}) => {
             <h2 className="text-orange-600 font-bold text-2xl ">
               ${item.foodPrice}
             </h2>
-            <div className="rounded-full w-8 h-8 border-2 bg-orange-300 border-orange-500 p-2 ">
+            <div onClick={() => {
+                                  updateItemQuantity(item.id, 1); 
+                        }
+            } className="rounded-full w-8 h-8 border-2 bg-orange-300 border-orange-500 p-2 ">
               <img
+                
                 src={assets.plus}
                 alt=""
                 className="w-full h-full rounded-full cursor-pointer hover:shadow-md"
@@ -75,8 +79,13 @@ const Card = ({getMenuItem}) => {
                   <h2 className="text-orange-600 font-bold text-2xl ">
                     ${item.foodPrice}
                   </h2>
-                  <div className="rounded-full w-8 h-8 border-2 bg-orange-300 border-orange-500 p-2 ">
+                  <div  onClick={() => {
+                                  updateItemQuantity(item.id, 1); 
+                        }
+            } className="rounded-full w-8 h-8 border-2 bg-orange-300 border-orange-500 p-2 ">
                     <img
+                    
+                   
                       src={assets.plus}
                       alt=""
                       className="w-full h-full rounded-full cursor-pointer hover:shadow-md"

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Login from './Auth/Login'
 import Register from './Auth/Register'
@@ -17,9 +17,19 @@ import Logout from './Auth/Logout'
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
   const [isAuth,setisAuth] = useState(false);
+  const [cartItem,setCartItem] = useState("");
+  const [ItemQuantity,setItemQuantity] = useState(0);
+
+  const updateItemQuantity = (id,count) =>{
+    setCartItem(id);
+    setItemQuantity(ItemQuantity+count);
+  }
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  useEffect(()=>{
+    console.log(cartItem,ItemQuantity);
+  })
 
   return (
     <div className=' w-[100%] md:w-full'>
@@ -29,7 +39,7 @@ function App() {
   
       
       <Routes>
-        <Route  path="/foodie/" element={<Home />} />
+        <Route  path="/foodie/" element={<Home  updateItemQuantity={updateItemQuantity}/>} />
         <Route  path="/foodie/login" element={<Login setisAuth={setisAuth}/>} />
         <Route  path="/foodie/register" element={<Register setisAuth={setisAuth}/>} />
         <Route  path="/foodie/logout" element={<Logout />} />

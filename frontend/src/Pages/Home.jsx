@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Home = ({updateItemQuantity}) => {
   const [getMenuItemName,SetMenuItemName] = useState([]);
   const handleMenuItem = (e) =>{
     SetMenuItemName(e.target.alt);
@@ -15,7 +15,7 @@ const Home = () => {
     <Header/>
     <Menu setMenuItem={handleMenuItem} />
     <h1 className="w-[90%] md:w-[70%]  m-auto mt-4 mb-4 text-2xl font-medium">Top dishes near you</h1>
-    <Card getMenuItem = {getMenuItemName}/>
+    <Card getMenuItem = {getMenuItemName} updateItemQuantity={updateItemQuantity}/>
     <Footer/>
     </>
 
