@@ -1,0 +1,10 @@
+- logout page is remaining to create 
+- login logut navbar state updation problem remove 
+- now a problem was created that i need to fetch food items from database but 
+those images were stored in the admin react app in there backend folder so 
+i needed to change port of admin backend server and store images with full location
+or full path where  images were stored in the admin react app 'http://localhost:8080/uploads/images' 
+
+
+task before login or register i can't watch food dishes and that should not be the case 
+so the pnly thing i need to do is allow food dishes but don't allow to place order without login
