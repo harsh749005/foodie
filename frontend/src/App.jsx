@@ -28,7 +28,7 @@ function App() {
     setMenuOpen(!isMenuOpen);
   };
   useEffect(()=>{
-    console.log(cartItem,ItemQuantity);
+    console.log("item id and it's quality"+cartItem,ItemQuantity);
   })
 
   return (
